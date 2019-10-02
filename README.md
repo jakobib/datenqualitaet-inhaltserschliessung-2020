@@ -8,7 +8,9 @@ This repository contains notes for an article about quality of data and services
 
 ## First notes
 
-The article will summarize and evaluate data formats and services for subject indexing and content analysis on a technical level (interoperability). Quality of tools and algorithms will be covered in another article.
+The article will summarize and evaluate data formats and services for subject indexing and content analysis on a technical level (interoperability). The article will neither deal with quality of subject indexing nor with quality of tools to process this data but with formats, specifications, and systems to process subject indexing information.
+
+Quality of tools and algorithms will be covered in another article.
 
 * data formats
     * as part of bibliographic data (e.g. which MARC fields contain subject indexing)
