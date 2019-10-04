@@ -1,10 +1,9 @@
-This repository contains notes for an article about quality of data and services for subject indexing (APIs, formats, technical interoperability...) to be published in 2020.
+This repository contains notes for a German article about quality of data and services for subject indexing (APIs, formats, technical interoperability...) to be published in 2020.
 
 ## Metadata
 
-* German or English?
-* less than 35.000 characters (around 5.000 words)
-* deadline around Summer 2020
+* Umfang: Bis zu 35.000 Zeichen (etwa 5.000 Wörter)
+* Deadline: Sommer 2020
 
 ## First notes
 
