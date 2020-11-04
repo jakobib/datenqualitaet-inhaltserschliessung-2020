@@ -43,4 +43,4 @@ Bei der Sicht auf Daten als Fakten ist vor Allem die Korrektheit relevant. Bei d
 
 ## Contributions and Feedback
 
-Feedback is welcome, for instance via <https://github.com/jakobib/subject-indexing-data-quality-2020/issues>!
+Feedback is welcome, for instance via <https://github.com/jakobib//datenqualitaet-inhaltserschliessung-2020issues>!

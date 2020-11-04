@@ -1,0 +1,21 @@
+---
+title: Datenqualität als Grundlage qualitativer Inhaltserschließung
+author:
+- name: Jakob Voß
+  email: jakob.voss@gbv.de
+  orcid: 0000-0002-7613-4123
+  affiliation: Verbundzentrale des GBV (VZG)
+
+repository: https://github.com/jakobib/datenqualitaet-inhaltserschliessung-2020/
+
+created: 2020
+license:
+  label: CC BY-SA 4.0
+  uri: https://creativecommons.org/licenses/by-sa/4.0/
+
+# for HTML template
+csl: acm-sig-proceedings.csl
+link-citations: true
+link-wikidata-references: true
+---
+
