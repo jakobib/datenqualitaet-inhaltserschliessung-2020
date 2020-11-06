@@ -13,8 +13,23 @@ license:
   label: CC BY-SA 4.0
   uri: https://creativecommons.org/licenses/by-sa/4.0/
 
+#ccsdesc:
+#- relevance: 500
+#  class: Quality Assurance
+#  url: https://dlnext.acm.org/topic/ccs2012/10003456.10003457.10003490.10003507.10003510
+#- relevance: 300
+#  class: Data Structures
+#  url:
+#- relevance: 300
+#  class: Information integration
+#  url:
+#- relevance: 100
+#  class: Digital libraries and archives
+#  url:
+
+
 # for HTML template
-csl: acm-sig-proceedings.csl
+csl: chicago-author-date-de.csl
 link-citations: true
 link-wikidata-references: true
 ---

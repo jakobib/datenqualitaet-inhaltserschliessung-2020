@@ -1,7 +1,18 @@
 ---
 bibliography: wcite.json
 citekeys:
+    Batini2016: Q101460339
+    Reiner2007: Q101437799 
+    Voss2013a: Q22910779
+    Voss2013b: Q61967951
+    Goedert2012: Q101419449
+    Bertram2005: Q101417270
     Hildebrand2018: Q101093354
-    Voss2013: Q22910779
     RFC2119: Q47458862
+    DIN820: Q1153828
+    ISO9000_2015: Q101403379
+    ISO8402_1994: Q101402994
+    Holstrom2020: Q101202887
+    FrankeMaier2018: Q101230880
+    Floridi2014: Q101419246
 ...
