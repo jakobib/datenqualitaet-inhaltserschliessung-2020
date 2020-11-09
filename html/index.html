@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Datenqualität als Grundlage qualitativer Inhaltserschließung</title>
+    <link href="css/basic.css" media="all" rel="stylesheet" />
+    <link href="css/dokieli.css" rel="stylesheet" media="all" />
+    <link href="css/index.css" rel="stylesheet" media="all" />
+    <meta name="generator" content="pandoc" />
+      </head>
+
+  <body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# schema: http://schema.org/" typeof="schema:CreativeWork">
+
+    <main>
+      <article about="" typeof="schema:ScholarlyArticle">
+        
+        <h1 property="schema:name">Datenqualität als Grundlage qualitativer Inhaltserschließung</h1>
+
+        
+                <div id="authors">
+          <dl id="author-name">
+            <dt>Authors</dt>
+            <dd>
+                           <span about="" rel="schema:creator schema:publisher schema:author">
+                <a about="https://orcid.org/0000-0002-7613-4123" typeof="schema:Person" rel="schema:url" property="schema:name" href="">Jakob Voß</a>
+                                  <a href="https://orcid.org/0000-0002-7613-4123">
+                    <img alt="ORCID iD" src="orcid.svg" style="height:16px; margin-left:4px; margin-right:4px; width:16px">
+                  </a>
+                              </span>
+                         </dd>
+          </dl>
+          <ul id="author-org">
+                       <li>Verbundzentrale des GBV (VZG)</li>
+                     </ul>
+          <ul id="author-email">
+                       <li><a about="https://orcid.org/0000-0002-7613-4123" rel="schema:email" href="mailto:jakob.voss@gbv.de">jakob.voss@gbv.de</a></li>
+                     </ul>
+        </div>
+        
+                <dl id="document-created">
+          <dt>Published</dt>
+          <dd>2020</dd>
+        </dl>
+        
+        
+        
+        
+                <dl id="document-repository">
+          <dt>Repository</dt>
+          <dd><a href="https://github.com/jakobib/datenqualitaet-inhaltserschliessung-2020/">https://github.com/jakobib/datenqualitaet-inhaltserschliessung-2020/</a></dd>
+        </dl>
+        
+        
+                <dl id="document-license">
+          <dt>License</dt>
+          <dd><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></dd>
+        </dl>
+        
+
+        <div id="content">
+
+          
+                    <section id="categories-and-subject-descriptors">
+            <h2>Categories and Subject Descriptors</h2>
+            <div>
+              <ul>
+                               <li>
+                 <a href="https://dlnext.acm.org/topic/ccs2012/10003456.10003457.10003490.10003507.10003510">CCS</a>
+                 Quality Assurance 
+                </li>
+                               <li>
+                 <a href="">CCS</a>
+                 Data Structures 
+                </li>
+                               <li>
+                 <a href="">CCS</a>
+                 Information integration 
+                </li>
+                               <li>
+                 <a href="">CCS</a>
+                 Digital libraries and archives 
+                </li>
+                             </ul>
+            </div>
+          </section>
+          
+          
+                    <nav id="TOC" role="doc-toc">
+          <ul>
+          <li><a href="#einleitung">Einleitung</a></li>
+          <li><a href="#datenqualität">Datenqualität</a></li>
+          <li><a href="#dimensionen-der-datenqualität">Dimensionen der Datenqualität</a></li>
+          <li><a href="#einflussfaktoren-auf-datenqualität-in-der-inhaltserschließung">Einflussfaktoren auf Datenqualität in der Inhaltserschließung</a><ul>
+          <li><a href="#datenformate">Datenformate</a></li>
+          <li><a href="#software-und-schnittstellen">Software und Schnittstellen</a></li>
+          <li><a href="#anwendungen">Anwendungen</a></li>
+          </ul></li>
+          <li><a href="#anforderungen-an-den-qualitativen-umgang-mit-erschließungsdaten">Anforderungen an den qualitativen Umgang mit Erschließungsdaten</a><ul>
+          <li><a href="#grundlegende-strukturierungsprinzipien">Grundlegende Strukturierungsprinzipien</a></li>
+          <li><a href="#interoperabilität">Interoperabilität</a></li>
+          <li><a href="#useability">Useability</a></li>
+          </ul></li>
+          <li><a href="#zusammenfassung">Zusammenfassung</a></li>
+          <li><a href="#notizen">Notizen</a></li>
+          </ul>
+          </nav>
+          
+<section id="einleitung" class="level2">
+<h2>Einleitung</h2>
+<p>Spätestens mit Beginn des 21. Jahrhunderts findet die inhaltliche Erschließung von Dokumenten praktisch ausschließlich in digitaler Form statt. Dies gilt sowohl für die fachliche Inhaltserschließung durch Bibliotheken und andere Dokumentationseinrichtungen als auch für die verschiedensten Formen inhaltlicher Beschreibung in Datenbanken von Produktbeschreibungen im Internethandel bis zum Social Tagging. Selbst dort wo analoge Ursprünge vorhanden sind, beispielsweise handschriftliche Notizen oder retrokonvertierte Findmittel, liegt die Sacherschließung am Ende in Form von Daten vor. Für die konkrete Ausprägung dieser Daten gibt es allerdings viele verschiedene Möglichkeiten. Der vorliegende Artikel soll einen Überblick darübr geben wie unterschiedliche Praktiken der Datenverarbeitung die Qualität von Inhaltserschließung beeinflussen und wie die Qualität von Erschließungsdaten beurteilt werden kann. Der Fokus liegt also nicht auf den Inhalten von Erschließungsdaten sondern auf ihrer Form. Die Form von Daten ist kein rein technische Nebensächlichkeit sondern durchaus relevant: so geht die Qualität einer inhaltlich hervorragenden Inhaltserschließung praktisch gegen Null wenn die Erschließungsdaten aufgrund inkompatibler Datenformate nicht verwendet werden können. Zur qualitativen Einschätzung von Inhaltserschließung ist es daher notwendig sich auch darüber im Klaren zu sein, wie und in welcher Form die Erschließungsdaten verarbeitet werden.</p>
+<p>Nach der Klärung grundlegender Begriffe rund um Datenqualität werden Faktoren dargelegt, die die Qualität auf formaler Ebene beeinflussen. Eine zentrale Rolle spielen dabei Datenformate, Schnittstellen und Anwendungen. Es folgt eine Übersicht von Anforderungen um den qualitativen Umgang mit Erschließungsdaten beurteilen und sicherstellen zu können.</p>
+<p><em>Abschließend werden Empfehlungen gegeben…(TODO)</em></p>
+</section>
+<section id="datenqualität" class="level2">
+<h2>Datenqualität</h2>
+<p>Im Rahmen des Qualitätsmanagement bezieht sich Qualität auf die “Eignung, festgelegte und vorausgesetzte Erfordernisse zu erfüllen” <span class="citation" data-cites="Q101402994">[<a href="#ref-Q101402994" role="doc-biblioref">10</a>]</span> beziehungsweise auf den “Grad, in dem ein Satz inhärenter Merkmale Anforderungen erfüllt” <span class="citation" data-cites="Q101403379">[<a href="#ref-Q101403379" role="doc-biblioref">11</a>]</span>. Qualität ist also kein Selbstzweck sondern muss immer danach beurteilt werden, welche Anforderungen erfüllt werden sollen. Eine umfassende Beurteilung von Datenqualität in der Inhaltserschließung erfordert also die genauere Bestimmung dessen was mit Inhaltserschließung erreicht werden soll — kurz gesagt die Frage nach dem Sinn von Inhaltserschließung. Um dieser durchaus berechtigten Frage aus dem Weg zu gehen setzen wir voraus, dass Inhaltserschließung gewisse sinnvolle Zwecke erfüllen kann, die damit zusammenhängen, Dokumente gezielt aufzufinden (Retrieval) und sich einen Überblick über ihren Inhalte verschaffen zu können <span class="citation" data-cites="Q101417270 Q101419449">[<a href="#ref-Q101417270" role="doc-biblioref">1</a>, <a href="#ref-Q101419449" role="doc-biblioref">6</a>]</span>.</p>
+<p>Wie gut die Zwecke der Inhaltserschließung erreicht werden können ist weniger eine Frage der Datenqualität als der Informationsqualität. Beide Begriffe werden trotz gelegentlicher Differenzierungsversuche meist synonym verwandt, weshalb eine genauere Unterscheidung notwendig ist <span class="citation" data-cites="Q101093354">[<a href="#ref-Q101093354" role="doc-biblioref">5</a>]</span>. Daten lassen sich aus verschiedener Perspektive als Fakten, Beobachten oder Dokumente auffassen <span class="citation" data-cites="Q22910779">[<a href="#ref-Q22910779" role="doc-biblioref">8</a>]</span>. Im Rahmen dieser Untersuchung wird letzere Auffassung vertreten, nach der Daten in erster Linie digitale Dokumente sind, die sich unabhängig vom konkreten Inhalt als Strukturen untersuchen lassen <span class="citation" data-cites="Q22910779">[<a href="#ref-Q22910779" role="doc-biblioref">8</a>]</span>. Die Relevanz dieser Art von Daten und ihrer Qualitätsmerkmale lässt sich anhand eines Datensatzes mit einer Liste von Schlagwörtern illustrieren:</p>
+<ul>
+<li>Niedrige Informationsqualität ist gegeben wenn die Schlagwörter nicht zum Dokument passen.</li>
+<li>Niederige Datenqualität ist gegeben wenn die Liste gar keine Schlagwörter enthält oder nicht einmal eine Liste erkennbar ist.</li>
+</ul>
+<p>Datenqualität ist demnach kein hinreichendes Kriterium für qualitative Inhaltserschließung sondern deren notwendige Grundlage. Zur Unterscheidung von anderen Auffassungen von Daten könnte die hier untersuchte Form von Datenqualität auch als <em>formale Datenqualität</em> oder <em>strukturelle Datenqualität</em> bezeichnet werden. Viele ihrer Merkmale sind nicht nur für Inhaltserschließungsdaten sondern auch für anderen Anwendungen relevant; ihre Untersuchung ist deshalb auch ein allgemeiner Beitrag zur Data Literary. Zusammengefasst beschäftigt sich Datenqualität nicht mit dem Inhalt sondern mit der Form. Die angestrebten Anforderungen an Daten betreffen vor allem die Lesbarkeit und Verarbeitbarkeit. Dazu ist weniger relevant was in den Daten drinsteht sondern wie die Daten erstellt und verarbeitet werden.</p>
+</section>
+<section id="dimensionen-der-datenqualität" class="level2">
+<h2>Dimensionen der Datenqualität</h2>
+<p><em>Wang and Strong 1996</em></p>
+<p>In der Literatur werden verschiedene Dimensionen der Datenqualität wie Vollständigkeit, Fehlerfreiheit, Konsistenz und Aktualität genannt. <span class="citation" data-cites="Q101093354">[<a href="#ref-Q101093354" role="doc-biblioref">5</a>]</span>. Auf formaler Ebene lässt sich lediglich die Konsistenz von Daten bestimmen: diese basiert auf einer Menge von Konsistenzregeln, die jeweils erfüllt oder verletzt werden können.</p>
+<p>Eine Metrik für die Konsistenz von Daten basiert auf einer Menge von Konsistenzregeln</p>
+<p>So könnte beispielsweise für bibliographische Daten festgelegt werden, dass eine Publikation keine ISBN haben darf wenn ihr Erscheinungsjahr vor 1965 liegt.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Für Sacherschließung sind solche Konsistenzregeln allerdings schwer anzugeben.</p>
+<p>Ggf. Teil der konkreten Sacherschließungssysteme</p>
+<p>Vollständigkeitsregeln:</p>
+<p>Es gibt viele Dimensionen, keine einheitliche Liste <span class="citation" data-cites="Q101419246">[<a href="#ref-Q101419246" role="doc-biblioref">3</a>]</span></p>
+<p>Für die Sacherschließung</p>
+<p>Vollständigkeit: teilweise mittels mappings möglich (wenn vorausgesetzt wird, dass vorhande Mappings vollständig sind und dass mit allen berücksichtigten Systeme erschlossen werden soll)</p>
+<p>“Representational IQ”</p>
+<p>“Batini and Scannapieco (2006, p. 39) note: ‘According to the definitions described in the previous section, there is no general agreement either on which set of dimensions defines data quality or on the exact meaning of each dimension”</p>
+</section>
+<section id="einflussfaktoren-auf-datenqualität-in-der-inhaltserschließung" class="level2">
+<h2>Einflussfaktoren auf Datenqualität in der Inhaltserschließung</h2>
+<p>Allgemein lassen sich die Datenqualität in der Inhaltserschließung beeinflussenden Faktoren grob in drei Bereiche einteilen:</p>
+<ol type="1">
+<li><p>Standards und Regeln legen fest wie Daten idealerweise aussehen sollen. Diese <em>präskriptiven Faktoren</em> spiegeln sich insbesondere in Datenformaten wieder.</p></li>
+<li><p>Implementierung durch Software bestimmen wie Daten tatsäch verarbeitet werden. Diese <em>deskriptiven Faktoren</em> legen fest welche Form Daten annehmen können. Umgesetzt ist die Verarbeitung der Daten mit Algorithmen und Schnittstellen.</p></li>
+<li><p>Schließlich gibt es <em>praktische Faktoren</em> darin wie Daten in der Praxis tatsächlich gehandhabt werden, also was Menschen tatsächlich mit ihnen machen indem sie auf unterschiedliche Art mit Anwendungen umgehen.</p></li>
+</ol>
+<p>In etwa entspricht diese Einteilung der unterschiedlichen Betrachtung von Daten in ihrer statischen Form (Datenformate), ihrer dynamischen Verarbeitung (Implementierung von Features) und ihrer praktischen Anwendung.</p>
+<p>TODO:</p>
+<p>Für die Datenqualität sind unter den von Franke-Maier genannten Qualitätsdimensionen im Bereich der Inhaltserschließung konkret die “Qualität der digitalen Werkzeuge”, die “Qualität des Datentauschs” und die “Qualität der Suchwerkzeuge” relevant <span class="citation" data-cites="Q101230880">[<a href="#ref-Q101230880" role="doc-biblioref">4</a>]</span>.</p>
+<section id="datenformate" class="level3">
+<h3>Datenformate</h3>
+<p><strong>Normdatenformate</strong> zum Austausch</p>
+<p>Verfügbarkeit und Nutzbarkeit von Normdaten-Systemen. Wie BARTOC zeigt: Viele Erschließungssysteme</p>
+<p><strong>Metadatenformate</strong> für bibliographische Inhalte…</p>
+</section>
+<section id="software-und-schnittstellen" class="level3">
+<h3>Software und Schnittstellen</h3>
+<ul>
+<li>Softwareprodukte (Teil von Katalogisierung, nicht ausgeprägt dafür optimiert
+<ul>
+<li>z.B. Dokumentenserver</li>
+<li>z.B. Katalogisierungssoftware</li>
+<li>Gegenbeispiel: social tagging bei dem Sacherschließung mehr im Mittelpunkt steht</li>
+<li>Nicht zuletzt: Retrieval-Anwendungen, die auf Sacherschließung aufbauen</li>
+</ul></li>
+<li>Schnittstellen (der sichtbare Teil von Software)</li>
+</ul>
+<p>Wie kommen wir an die Daten? Index, Drill-Down</p>
+<p>Umfrage zu Anforderungen an KOS-Systeme (siehe DINI AG KIM)</p>
+</section>
+<section id="anwendungen" class="level3">
+<h3>Anwendungen</h3>
+<p>Außerdem: Menschen: Data Literacy, Gewohngheitstier…</p>
+<p>Beispiel: Autocomplete vebessert <span class="citation" data-cites="Q101202887">[<a href="#ref-Q101202887" role="doc-biblioref">7</a>]</span> “autocomplete made tag entry faster, more prolific, more accurate, and more consistent”</p>
+<hr />
+<p>Informatik eher: Performance und Sicherheit</p>
+<ul>
+<li>Duplicate Detection</li>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="anforderungen-an-den-qualitativen-umgang-mit-erschließungsdaten" class="level2">
+<h2>Anforderungen an den qualitativen Umgang mit Erschließungsdaten</h2>
+<p>Nachdem betrachtet wodurch die Qualität von Erschließungsdaten beeinflusst wird:</p>
+<p>Zur Sicherstellung der Datenqualität lassen sich allgemeine Anforderungen an den Umgang mit Erschließungsdaten identifizieren:</p>
+<p><strong>Erstens</strong> muss es Regeln geben, an denen die Datenqualität gemessen werden kann. So ist beispielsweise die formale Qualität eines Datenfeldes “Schlagwörter” nicht bestimmbar ohne genauere Angabe in welcher Form dort welche Art von Schlagwörtern angegeben werden sollen. Selbst Freitext-Felder beinhalten bei genauerer Betrachtung meist Regeln zu erlaubten Zeichen und Längen. Zwar können Menschen Daten oft auch ad-hoc auf Grundlage von Erfahrungswerten einschätzen; zur Sicherstellung einer einheitlichen Datenqualität ist die subjektive Bewertung von Einzelfällen jedoch nicht geeignet. Die Bewertung durch Expert*innen kann allerdings dazu beitragen sich möglicher Anforderungen an die Datenqualität bewusst zu werden und zu konkreten Regeln zu kommen.</p>
+<p><strong>Zweitens</strong> müssen die Regeln denen qualitative Daten folgen sollen auch dokumentiert sein. Insbesondere müssen implizite Annahmen und Praktiken (“wurde schon immer so gemacht”) explizit aufgeschrieben werden.</p>
+<p>Implizite Regeln finden sich oft auch versteckt in der Software, mit der die Daten erfasst und verarbeitet werden. Werden beispielsweise aus einem Eingabefeld mehrere Schlagwörter erstellt wenn diese durch Kommata getrennt wurden, so ergibt sich dass einzelne Schlagwörter vermutlich kein Komma beinhalten können (außer es gibt weitere Regeln wie Schlagwörtern mit Kommata in der Bezeichnung bei der Eingabe erkannt werden).</p>
+<p>Die Notwendigkeit einer Dokumentation ist um so höher wenn Daten zwischen verschiedenen Einrichtungen oder Systemen ausgetauscht werden. Dabei sollte die Dokumentation nicht nur für diejenigen zugänglich sein, die Erschließung betreiben, sondern auch für all jene die Daten nutzen oder an einer Nutzung interessiert sein könnten.</p>
+<p>Dies setzt zum einen eine ordentliche Publikation von Standards und Richtlinien voraus. Idealerweise:</p>
+<ul>
+<li>Herausgeber und Kontaktmöglichkeiten</li>
+<li>Leicht auffindbar (Verlinkt)</li>
+<li>Angaben über Gültigkeit (Datum und Versionen, ggf. Änderungen)</li>
+<li>Idealerweise Versionierung mit Kennzeichnung was wann geändert wurde</li>
+</ul>
+<p>Zum anderen sollten die publizierten Dokumente auch ohne umfangreiches Hintergrundwissen verständlich sein. Weitere Hinweise zur Formulieren von guten Datenstandards siehe XXX (z.B. “How to write standards” von ISO).</p>
+<ul>
+<li>Verständliche Sprache</li>
+<li>Gute Beispiele (sind schwierig zu finden, da verschiedene Möglichkeiten abgedeckt werden sollten..)</li>
+</ul>
+<p><strong>Drittens</strong> sollten sich die Regeln nach denen Daten aufgebaut werden</p>
+<ul>
+<li>Wenn es umfangreicher wird: Aufbau auf etablierten Datenstrukturierungssprache (JSON, CSV…)</li>
+</ul>
+<p>erfasst und weitergegeben werden</p>
+<p>Best-Practice</p>
+<p>Bei technische Spezifikationen: Verweis auf andere Standards (<em>Beispiel</em>)</p>
+<p>elemente möglicht ein Anwendungsfall, ein Standard/Feld/Regel</p>
+<p>verständlich sind.</p>
+<p><em>…hier dazu wie gute Standards formuliert und publiziert werden…</em></p>
+<ul>
+<li>Kennzeichnung von relevanten Teilen (z.B. notwendige Trennzeichen) und irrelevanten Teilen die ohne Bedeutungsverlust unterschiedlich gehandhabt werden können (z.B. die Verwendung von Leerzeichen)</li>
+</ul>
+<p>Oft ist die Datendokumentation</p>
+<p>Siehe <a href="https://zenodo.org/record/1025743" class="uri">https://zenodo.org/record/1025743</a></p>
+<ul>
+<li>Gute Standards bauen aufeinander auf (nicht das Rad neu erfinden). Im Laufe der Zeit kann es dazu kommen, dass sich außerhalb der eigenen Anwendungsdomäne konkurrierende Standards aus anderen Bereichen durchsetzen. Beispiel: Unicode statt PICA-Zeichensatz</li>
+</ul>
+<p>Regeln sollten modular sein, d.h. einzelne, klar abgegrenzte Regeln für unterschiedliche Teile der Daten. : Datenfelder einzeln dokumentieren.</p>
+<p>Möglichst konkret</p>
+<p>Spezial- und Sonderfälle sollten</p>
+<ul>
+<li>Nicht zu allgemein und offen (z.B. “In Klammern kann ein Typ angegeben werden”: was ist ein Typ…)</li>
+<li>Aber auch nicht zu eng (es gibt nur folgende Typen…)</li>
+</ul>
+<p>Auch technisch nicht zu offen: Abstrakte Standards z.B. SRU 2.0 führe viele varianten ein, die in der Praxis nicht benötigt werden</p>
+<p>Hier gilt es eine gesundes Balance zu finden zwischen …</p>
+<p>Gleichzeitg nicht zu kreative Lösungen vorbeugen (Beispiel: bei Jahresangaben in Klammern ein Kommentar) Hacks wird es immer geben, wenn ein Standard zu eng wird. Beispiel: in der Anwendung zeigt sich, dass Jahresangaben manchmal ungenau sind. Lass uns in Klammern Kommentare angeben!</p>
+<p>Standards entwickeln sich weiter</p>
+<p><strong>Fünftens</strong> Validieren! dafür benötigt: formale Schemas, Datentypen, Ontologien, Reguläre Ausdrücke formale Sprachen wie en wie reguläre Ausdrücke, Schemata, Datentypen, Ontologien etc. Diese Sprachen dienen der Exaktheit und ermöglichen es automatisch zu überprüfen.</p>
+<p>Standards sind Abmachungen, sie können also eingehalten oder gebrochen werden.</p>
+<p>Das erkennen von Regelverstößen und ungenauigkeiten ist jedoch nur ein Teil</p>
+<p>Wenn Regelverstöße keine Konsequenzen nach sich ziehen (also zum Beispiel Fehlersuche, Rückmeldung, Ablehnung von Daten…) wird sich am Ende sowieso niemand daran halten.</p>
+<p>“Ignoriere soziale Aspekte”: Kein Standard ist frei von Interessen. Ein gutes Rezept zum Scheitern ist es daher so zu tun als seien Daten eine rein technische Angelegenheit ohne soziale Implikationen und Konflikte.</p>
+<p>Verhältnis von Aufwand und Nutzen…</p>
+<section id="grundlegende-strukturierungsprinzipien" class="level3">
+<h3>Grundlegende Strukturierungsprinzipien</h3>
+<p>Grundsätzlich können Daten auf vielfältige Art und Weise in einzelne Elemente strukturiert und miteinander in Beziehung gesetzt werden. In der Praxis gibt es allerdings einige typischen Gestaltungsmuster, die unabhängig von der konkreten Technik immer wieder verwendet werden <span class="citation" data-cites="Q22910779">[<a href="#ref-Q22910779" role="doc-biblioref">8</a>]</span>. Zum Verständnis von Datenformaten und Standards hilft es insbesondere nach folgenden Festlegungen Ausschau zu halten:</p>
+<ol type="1">
+<li><p>Einteilung in Datenelemente: Welche Bestandteile von Daten sind die elementare Einheiten und wo sind stattdessen Binnen-Strukturen vorhanden? Beispielsweise können Namen je nach Erfassungsregeln entweder atomar sein oder weiter in Vor- und Nachnamen unterteilt werden.</p></li>
+<li><p>Vorgeschrieben und erlaubte Bestandteile: Welche Datenelemente <em>müssen</em> und welche <em>dürfen</em> vorhanden sein? So könnte ein Erfassungssystem beispielsweise vorschreiben, dass jedes Objekt mit einer geographischen Koordinate versehen sein muss oder dass die Bedeutung von Sachschlagwörtern mit Qualifikatoren genauer eingegrenzt werden darf bzw. nicht darf. Zur Verwendung von Missverständnissen werden Anforderungen in formalen Standards idealerweise nach RFC 2119 <span class="citation" data-cites="Q47458862">[<a href="#ref-Q47458862" role="doc-biblioref">2</a>]</span> bzw. nach DIN 820-2 <span class="citation" data-cites="Q1153828">[<a href="#ref-Q1153828" role="doc-biblioref">9</a>]</span> mit groß geschrieben Modalverben angegeben:</p>
+<ul>
+<li><p>MUST (MUSS) gibt an, dass ein Element zwingend notwendig ist</p></li>
+<li><p>MUST NOT (DARF NICHT) gibt an, dass ein Element verboten ist</p></li>
+<li><p>MAY oder OPTIONAL (DARF oder KANN) geben an, dass ein Element erlaubt ist, aber auch weggelassen werden kann</p></li>
+<li><p>SHOULD (SOLLTE) und SHOULD NOT (SOLLTE NICHT) geben an, dass ein Element empfohlen wird, aber in begründeten Ausnahmefällen auch weggelassen werden kann</p></li>
+</ul></li>
+<li><p>Wiederholbarkeit</p>
+<p>…</p></li>
+<li><p>Reihenfolge</p>
+<p>Spielt bei Schlagwortketten eine Rolle, beispielsweise Gewichtung</p></li>
+<li><p>Identifikatoren</p>
+<p>Listen von erlaubte Werte. Genaugenommen handelt es sich bei …</p></li>
+</ol>
+<hr />
+</section>
+<section id="interoperabilität" class="level3">
+<h3>Interoperabilität</h3>
+<p>…</p>
+</section>
+<section id="useability" class="level3">
+<h3>Useability</h3>
+<p>..?</p>
+</section>
+</section>
+<section id="zusammenfassung" class="level2">
+<h2>Zusammenfassung</h2>
+<p>…</p>
+<ul>
+<li>Bewertung, praktische Ratschläge…</li>
+</ul>
+<p>Kontrollierte Vokabulare: nicht nur wegen Indexierungskonsistenz sondern weil ohne diese, Maschinen nur wenig damit Andfangen können (außer Maschine-Learning, z.B. Text-Mining, was aber eher ein Schritt zur Inhaltserschließung ist!)</p>
+</section>
+<section id="notizen" class="level2">
+<h2>Notizen</h2>
+<ul>
+<li><p>Beispiel: Entwicklung von Standard für ungenaue Datumsangaben</p></li>
+<li><p>Datenmanagementplan</p></li>
+<li><p>Datenformate zur Sacherschließung: Übersicht!! (siehe format.gbv.de)</p></li>
+</ul>
+<p>Maße:</p>
+<ul>
+<li>konsistenz (hängt vom inhalt ab, kann aber auch zu Regeln führen)</li>
+<li>variabilität</li>
+</ul>
+<p>— implizite Vorgaben, die sich erst durch Versuch und Irrtum erschließen reichen nicht aus.</p>
+<p>Sind keine Daten besser als qualitativ schlechte Daten?</p>
+<p>Datenpraxis</p>
+<p>Obgleich alle Daten letzendlich als Folgen von Bits ausgedrückt werden können, gibt es zahlreiche Datenformate und Praktiken der Datenverarbeitung Nun sind Daten letzendlich folgen von Bits <span class="citation" data-cites="Q22910779">[<a href="#ref-Q22910779" role="doc-biblioref">8</a>]</span></p>
+<p><em>Der Artikel soll einen Überblick über maßgebliche Verfahren zur Beurteilung der Qualität von Daten zur Inhaltserschließung geben.</em></p>
+<p><em>Der Schwerpunkt liegt dabei nicht auf den Inhalten sondern darauf wie diese in Daten kodiert sind und sich verlässlich verarbeiten lassen (Datenformate und Schnittstellen). Technische Anforderungen und Einflussfaktoren, die weitgehen unabhängig von den Inhalten (wie umfangreich und genau ist die Sacherschließung?)</em></p>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-Q101417270">
+<p>[1] Bertram, J. 2005. <em>Einführung in die inhaltliche Erschliessung</em>. Ergon-Verlag.</p>
+</div>
+<div id="ref-Q47458862">
+<p>[2] Bradner, S. and Bradner, S. 1997. <em>Key words for use in RFCs to Indicate Requirement Levels</em>. Internet Engineering Task Force. <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a>.</p>
+</div>
+<div id="ref-Q101419246">
+<p>[3] Floridi, L. and Phyllis, I. eds. 2014. <em>The Philosophy of Information Quality</em>. Springer Science+Business Media.</p>
+</div>
+<div id="ref-Q101230880">
+<p>[4] Franke-Maier, M. 2018. Anforderungen an die Qualität der Inhaltserschließung im Spannungsfeld von intellektuell und automatisch erzeugten Metadaten. <em>ABI Technik, Zeitschrift für Automation, Bau und Technik im Archiv-, Bibliotheks- und Informationswesen</em>. 38, 4 (Nov. 2018), 327–331. <a href="https://www.degruyter.com/view/journals/abitech/38/4/article-p327.xml">https://www.degruyter.com/view/journals/abitech/38/4/article-p327.xml</a>. DOI:<a href="https://doi.org/10.1515/abitech-2018-4005">https://doi.org/10.1515/abitech-2018-4005</a>.</p>
+</div>
+<div id="ref-Q101093354">
+<p>[5] Gebauer, M. et al. eds. 2018. <em>Daten- und Informationsqualität:</em></p>
+</div>
+<div id="ref-Q101419449">
+<p>[6] Gödert, W. et al. 2012. <em>Informationserschließung und Automatisches Indexieren: Ein Lehr- und Arbeitsbuch</em>. Springer Science+Business Media.</p>
+</div>
+<div id="ref-Q101202887">
+<p>[7] Holstrom, C. 2020. The effects of suggested tags and autocomplete features on social tagging behaviors. <em>Proceedings of the Association for Information Science and Technology</em>. 57, 1 (Oct. 2020). <a href="https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/pra2.263">https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/pra2.263</a>. DOI:<a href="https://doi.org/10.1002/pra2.263">https://doi.org/10.1002/pra2.263</a>.</p>
+</div>
+<div id="ref-Q22910779">
+<p>[8] Voss, J. 2013. <em>Describing Data Patterns</em>.</p>
+</div>
+<div id="ref-Q1153828">
+<p>[9] 2012. <em>Normungsarbeit</em>.</p>
+</div>
+<div id="ref-Q101402994">
+<p>[10] 1994. <em>Quality management and qualtity assurance - Vocabulary</em>.</p>
+</div>
+<div id="ref-Q101403379">
+<p>[11] 2015. <em>Quality management systems — Fundamentals and vocabulary</em>.</p>
+</div>
+</div>
+</section>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Das Standard Book Numbering System, britischer Vorläufer der ISBN, wurde 1965 von Gordon Foster entwickelt.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+        </div>
+      </article>      
+    </main>
+
+    <section id="changelog">
+      <h2>Changelog</h2>
+      <p>See <a href="https://github.com/jakobib/datenqualitaet-inhaltserschliessung-2020/">source code repository</a> for detailed changes.</p>
+      <dl>
+        <dt> ()</dt> 
+        <dd></dd>
+            </dl>
+    </section>
+
+    
+  </body>
+<script>(refs => {
+  const base = 'http://www.wikidata.org/entity/'
+  Array.from(refs).filter(e => (e.id || '').match(/^ref-(Q[0-9]+)$/))
+    .forEach(div => {
+      var qid = div.id.substr(4)
+      var a = document.createElement('a')
+      a.className = 'wikidata-link'
+      a.href = base + qid
+      var p = div.firstElementChild
+      p.insertBefore(a, p.firstChild)
+    })
+})(document.getElementById('refs').childNodes || [])
+</script>
+<style type="text/css">a.wikidata-link {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMiIgd2lkdGg9IjEwNTAiIGhlaWdodD0iNTkwIj4NCiAgPHBhdGggZD0ibSAxMjAsNTQ1IGggMzAgViA0NSBIIDEyMCBWIDU0NSB6IG0gNjAsMCBoIDkwIFYgNDUgSCAxODAgViA1NDUgeiBNIDMwMCw0NSBWIDU0NSBoIDkwIFYgNDUgaCAtOTAgeiIgc3R5bGU9ImZpbGw6Izk5MDAwMCIgLz4NCiAgPHBhdGggZD0ibSA4NDAsNTQ1IGggMzAgViA0NSBIIDg0MCBWIDU0NSB6IE0gOTAwLDQ1IFYgNTQ1IGggMzAgViA0NSBIIDkwMCB6IE0gNDIwLDU0NSBoIDMwIFYgNDUgSCA0MjAgViA1NDUgeiBNIDQ4MCw0NSBWIDU0NSBoIDMwIFYgNDUgaCAtMzAgeiIgc3R5bGU9ImZpbGw6IzMzOTk2NiIgLz4NCiAgPHBhdGggZD0ibSA1NDAsNTQ1IGggOTAgViA0NSBoIC05MCBWIDU0NSB6IG0gMTIwLDAgaCAzMCBWIDQ1IEggNjYwIFYgNTQ1IHogTSA3MjAsNDUgViA1NDUgaCA5MCBWIDQ1IEggNzIwIHoiIHN0eWxlPSJmaWxsOiMwMDY2OTkiIC8+DQo8L3N2Zz4=) no-repeat;
+  background-size: contain;
+  padding-left: 1.8em;
+  margin-right: 0.2em;
+}
+</style>
+</html>
