@@ -370,9 +370,9 @@ font-style:normal;
 }
 em.rfc2119 { color: #900; }
 
-ul { padding: 0; margin-bottom:1em; list-style-position: inside; }
+/*ul { padding: 0; margin-bottom:1em; list-style-position: inside; }*/
 nav ul { list-style: none; }
-ol ul { list-style-position: outside; padding-left: 1.5em; }
+/*ol ul { list-style-position: outside; padding-left: 1.5em; }*/
 
 dt { font-weight: bold; }
 
