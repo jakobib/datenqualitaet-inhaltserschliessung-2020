@@ -5,10 +5,10 @@ TEXT=$(NAME).md
 WCITE=./node_modules/wcite/bin/wcite
 PWCITE=./node_modules/wcite/bin/pwcite
 
-html: html/index.html
+html: docs/index.html
 
-html/index.html: metadata.yaml paper.md wcite.yaml wcite.json
-	mkdir -p html
+docs/index.html: metadata.yaml paper.md wcite.yaml wcite.json
+	mkdir -p docs
 	pandoc -s -t json \
 		metadata.yaml paper.md wcite.yaml | \
 	   ./adjust-for-html.jq | \
