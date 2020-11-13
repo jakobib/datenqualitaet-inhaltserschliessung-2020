@@ -14,11 +14,11 @@ Im Rahmen des Qualitätsmanagement bezieht sich Qualität auf die "Eignung, fest
 
 ## Datenqualität als Grundlage von Informationsqualität
 
-Wie gut die Zwecke der Inhaltserschließung erreicht werden können ist weniger eine Frage der Datenqualität als der Informationsqualität. Beide Begriffe werden trotz gelegentlicher Differenzierungsversuche meist synonym verwandt [@Hildebrand2018, Kapitel 5], deshalb ist an dieser Stelle eine genauere Eingrenzung von Daten notwendig: Daten lassen sich aus verschiedener Perspektive als Fakten, Beobachten oder Dokumente auffassen [@Voss2013b]. Im Rahmen dieser Untersuchung wird letzere Auffassung vertreten, nach der Daten in erster Linie digitale Dokumente sind. Daten lassen sich daher anders als Informationen unabhängig vom konkreten Inhalt in Form von Strukturen untersuchen lassen [@Voss2013a]. Die hier untersuchte Form von Datenqualität kann daher auch als *formale Datenqualität* oder *strukturelle Datenqualität* bezeichnet werden. Die Relevanz dieser Betrachtungsweise für die Datenqualität lässt sich anhand eines Datensatzes mit einer Liste von Schlagwörtern illustrieren:
+Wie gut die Zwecke der Inhaltserschließung erreicht werden können ist weniger eine Frage der Datenqualität als der Informationsqualität. Beide Begriffe werden trotz gelegentlicher Differenzierungsversuche meist synonym verwandt [@Hildebrand2018, Kapitel 5]. Deshalb ist an dieser Stelle eine genauere Eingrenzung von Daten notwendig: Daten lassen sich aus verschiedener Perspektive als Fakten, Beobachten oder Dokumente auffassen [@Voss2013b]. Im Rahmen dieser Untersuchung wird letzere Auffassung vertreten, nach der Daten in erster Linie digitale Dokumente sind. Daten lassen sich daher anders als Informationen unabhängig vom konkreten Inhalt in Form von Strukturen untersuchen lassen [@Voss2013a]. Die hier untersuchte Form von Datenqualität kann daher auch als *formale Datenqualität* oder *strukturelle Datenqualität* bezeichnet werden. Die Relevanz dieser Betrachtungsweise für die Datenqualität lässt sich anhand eines Datensatzes mit einer Liste von Schlagwörtern illustrieren:
 
-* Niedrige Informationsqualität ist gegeben wenn die Schlagwörter nicht zum Dokument passen.
+* Niedrige Informationsqualität ist gegeben, wenn die Schlagwörter nicht zum Dokument passen.
 
-* Niederige Datenqualität ist gegeben wenn die Schlagwörter nicht den formalen Regeln des Datenformats entsprechen, beispielsweise weil die Liste keine Schlagwörter enthält oder nicht einmal eine Liste erkennbar ist.
+* Niederige Datenqualität ist gegeben, wenn die Schlagwörter nicht den formalen Regeln des Datenformats entsprechen, beispielsweise weil die Liste keine Schlagwörter enthält oder nicht einmal eine Liste erkennbar ist.
 
 Datenqualität ist demnach kein hinreichendes Kriterium für qualitative Inhaltserschließung sondern deren notwendige Grundlage. Viele Merkmale von Datenqualität sind nicht nur für Inhaltserschließungsdaten sondern auch für anderen Anwendungen relevant; ihre Beschreibung ist deshalb auch ein allgemeiner Beitrag zur Data Literary. Zusammengefasst beschäftigt sich Datenqualität nicht mit dem Inhalt sondern mit der Form. Die angestrebten Anforderungen an Daten betreffen vor allem die Lesbarkeit und Verarbeitbarkeit. Dazu ist weniger relevant was in den Daten ausgedrückt ist sondern wie die Daten erstellt und verarbeitet werden.
 
@@ -28,7 +28,7 @@ Zur gezielten Erfassung und Verbesserung von Aspekten der Informations- bzw. Dat
 
 Unter den von @FrankeMaier2018 genannten Qualitätsdimensionen im Bereich der Inhaltserschließung sind für die Datenqualität konkret die "Qualität der digitalen Werkzeuge", die "Qualität des Datentauschs" und die "Qualität der Suchwerkzeuge" relevant. Unter den von @Hildebrand2018 allgemeinen Dimensionen lässt sich für Daten im engeren Sinne lediglich deren Konsistenz bestimmen: diese basiert auf einer Menge von Konsistenzregeln, die jeweils erfüllt oder verletzt werden können. So könnte beispielsweise für bibliographische Daten festgelegt werden, dass eine Publikation keine ISBN haben darf wenn ihr Erscheinungsjahr vor 1965 liegt.^[Das Standard Book Numbering System, britischer Vorläufer der ISBN, wurde 1965 von Gordon Foster entwickelt.] Für die Sacherschließung sind solche Konsistenzregeln allerdings nur schwer anzugeben. Stattdessen haben einzelne Erschließungssysteme eigene Regeln, wie zum Beispiel die Bildungsregeln für syntaktisch korrekte Notationen der Dewey-Dezimalklassifikation [@Reiner2007].
 
-Bei vorgeschriebener paralleler Verwendung mehrerer Erschließungssysteme (beispielsweise wenn jeder Datensatz sowohl mit Basisklassifikation als auch mit Regensburger Verbundklassifikation erschlossen sein muss) und vollständig vorhandenen Normdaten-Mappings zwischen diesen Systemen^[Siehe dazu die Sammlung und Werkzeuge zu Normdaten-Mappings unter <https://coli-conc.gbv.de/>.] könnte eine Konsistenzregeln darin bestehen dass die gewählten Notationen beider Systeme zumindest indirekt durch ein Mapping verbunden sein müssen.
+Bei vorgeschriebener paralleler Verwendung mehrerer Erschließungssysteme (beispielsweise wenn jeder Datensatz sowohl mit Basisklassifikation als auch mit Regensburger Verbundklassifikation erschlossen sein muss) und vollständig vorhandenen Normdaten-Mappings zwischen diesen Systemen^[Siehe dazu die Sammlung und Werkzeuge zu Normdaten-Mappings unter <https://coli-conc.gbv.de/>.] könnte eine Konsistenzregeln darin bestehen, dass die gewählten Notationen beider Systeme zumindest indirekt durch ein Mapping verbunden sein müssen.
 
 *TODO: ggf. hier noch ein Absatz zur Dimension "Representational IQ" (Wang and Strong 1996)*
 
@@ -54,9 +54,9 @@ Die Datenqualität in der Inhaltserschließung beeinflussenden Faktoren stammen 
 
     * Programme zum Retrieval oder zur Visualisierung aufbauend auf Erschließungsdaten
 
-   Der Einfluss von Anwendungsprogrammen auf die Datenqualität, insbesondere durch Usability und das Vorhandensein bzw. Fehlen von Funktionalitäten, kann nicht unterschätzt werden. So verzichten beispielsweise viele Systeme auf eine Autocomplete-Funktion obwohl dadurch die Erschließungsqualität verbessert werden kann [@Holstrom2020]. Auch wirkt die Art der Nutzung von Inhaltserschließung, beispielsweise durch Facettierung und Drill-Down beim Retrieval, auf die Daten zurück.
+   Der Einfluss von Anwendungsprogrammen auf die Datenqualität, insbesondere durch Usability und das Vorhandensein bzw. Fehlen von Funktionalitäten, kann nicht unterschätzt werden. So verzichten beispielsweise viele Systeme auf eine Autocomplete-Funktion, obwohl dadurch die Erschließungsqualität verbessert werden kann [@Holstrom2020]. Auch wirkt die Art der Nutzung von Inhaltserschließung, beispielsweise durch Facettierung und Drill-Down beim Retrieval, auf die Daten zurück.
 
-3. Schließlich gibt es *praktische Faktoren* darin wie Daten in der Praxis gehandhabt werden. Die Datenpraxis besteht darin was Menschen tatsächlich mit Daten machen indem sie auf unterschiedliche Art mit Regeln und Programmen umgehen. Neben individuellen Eigenheiten gehören zu diesen Faktoren institutionelle Anforderungen und Zwänge sowie nicht zuletzte die "Macht der Gewohnheit".
+3. Schließlich gibt es *praktische Faktoren* darin wie Daten in der Praxis gehandhabt werden. Die Datenpraxis besteht darin was Menschen tatsächlich mit Daten machen, indem sie auf unterschiedliche Art mit Regeln und Programmen umgehen. Neben individuellen Eigenheiten gehören zu diesen Faktoren institutionelle Anforderungen und Zwänge sowie nicht zuletzte die "Macht der Gewohnheit".
     Außerdem: Menschen: Data Literacy, Gewohngheitstier...
 
 Die Einflussfaktoren auf die Datenqualität führen in den verschiedenen Bereichen oft eine Art Eigenleben: Regeln müssen erst mit Leben gefüllt werden, Implementierungen setzen eigene Beschränkungen und Möglichkeiten und aus der Praxis entstehen neue Anforderungen. Nur durch forwährende Überprüfung kann sichergestellt werden, dass Standards, Programme und Praxis so gut wie möglich übereinstimmen und Datenqualität messbar wird. Welche Anforderungen dazu erfüllt werden müssen ist Gegenstand des folgenden Kapitels.
@@ -65,60 +65,18 @@ Die Einflussfaktoren auf die Datenqualität führen in den verschiedenen Bereich
 
 Aus der Betrachtung von Faktoren, die die Qualität von Erschließungsdaten beeinflussen, lassen sich einige allgemeine Anforderungen an den Umgang mit Erschließungsdaten identifizieren:
 
-## Datenqualitäts-Regeln
+## Datenqualität erfordert Regeln
 
 Erstens muss es Regeln geben, an denen die Datenqualität gemessen werden kann. So ist beispielsweise die formale Qualität eines Datenfeldes "Schlagwörter" nicht bestimmbar ohne genauere Angabe in welcher Form dort welche Art von Schlagwörtern angegeben werden sollen. Selbst Freitext-Felder beinhalten bei genauerer Betrachtung meist Regeln zu erlaubten Zeichen und Längen. Zwar können Menschen Daten oft auch ad-hoc auf Grundlage von Erfahrungswerten einschätzen; zur Sicherstellung einer einheitlichen Datenqualität ist die subjektive Bewertung von Einzelfällen jedoch nicht geeignet. Stattdessen können Expert*innen durch ihre Einschätzungen dazu beitragen sich möglicher Anforderungen an die Datenqualität bewusst zu werden und daraus zu konkreten Regeln zu kommen.
 
-## Dokumentation
-
-Zweitens müssen die Regeln denen qualitative Daten folgen sollen auch dokumentiert sein.  Insbesondere müssen implizite Annahmen und Praktiken ("wurde schon immer so gemacht") dokumentiert werden. Implizite Regeln finden sich oft im praktischen Umgang mit Daten und versteckt in Anwendungsprogrammen zur Erfassung und Verarbeitung von Erschließungsdaten. Werden beispielsweise in einem Eingabefeld mehrere Schlagwörter durch Kommata getrennt, ergibt sich daraus vermutlich die Regel, dass einzelne Schlagwörter kein Komma beinhalten können. Die Notwendigkeit einer Dokumentation ist um so höher wenn Daten zwischen verschiedenen Einrichtungen oder Systemen ausgetauscht werden. Dabei sollte die Dokumentation nicht nur für diejenigen zugänglich sein, die Erschließung betreiben, sondern auch für all jene die Daten nutzen oder an einer Nutzung interessiert sein könnten. 
-
-Die Anforderungen an eine gute Dokumentation für Datenregeln entsprechen in etwa den allgemeinen Anforderungen an gute Dokumentation
-
-Dies setzt zum einen eine ordentliche Publikation von Standards und Richtlinien voraus. ...
-
-*ab hier noch nicht ausformulierte Notizen ausgeblendet...*
-
 <!--
-Idealerweise:
+... Gute Standards bauen aufeinander auf (nicht das Rad neu erfinden):
 
-- Herausgeber und Kontaktmöglichkeiten
-- Leicht auffindbar (Verlinkt)
-- Angaben über Gültigkeit (Datum und Versionen, ggf. Änderungen)
-- Idealerweise Versionierung mit Kennzeichnung was wann geändert wurde
-
-Zum anderen sollten die publizierten Dokumente auch ohne umfangreiches Hintergrundwissen verständlich sein. Weitere Hinweise zur Formulieren von guten Datenstandards siehe XXX (z.B. "How to write standards" von ISO).
-
-- Verständliche Sprache
-- Gute Beispiele (sind schwierig zu finden, da verschiedene Möglichkeiten abgedeckt werden sollten..)
-
-* Gute Standards bauen aufeinander auf (nicht das Rad neu erfinden).
 Im Laufe der Zeit kann es dazu kommen, dass sich außerhalb der eigenen Anwendungsdomäne konkurrierende Standards aus anderen Bereichen durchsetzen. Beispiel: Unicode statt PICA-Zeichensatz
 
 Regeln sollten modular sein, d.h. einzelne, klar abgegrenzte Regeln für unterschiedliche Teile der Daten. : Datenfelder einzeln dokumentieren.
 
--->
-
-*Drittens* sollten die Regeln nach denen Daten aufgebaut werden auch überprüfbar sein.
-
-...
-
-<!--
-Diese Anforderung bezieht sich auf die Praktikabilität von Daten und Regeln
-
-- Wenn es umfangreicher wird: Aufbau auf etablierten Datenstrukturierungssprache (JSON, CSV...)
-
-erfasst und weitergegeben werden
-
-Best-Practice
-
 Bei technische Spezifikationen: Verweis auf andere Standards (*Beispiel*)
-
-elemente möglicht ein Anwendungsfall, ein Standard/Feld/Regel
-
-verständlich sind.
-
-*...hier dazu wie gute Standards formuliert und publiziert werden...*
 
 - Kennzeichnung von relevanten Teilen (z.B. notwendige Trennzeichen) und irrelevanten Teilen die ohne Bedeutungsverlust unterschiedlich gehandhabt werden können (z.B. die Verwendung von Leerzeichen)
 
@@ -137,24 +95,38 @@ Hacks wird es immer geben, wenn ein Standard zu eng wird. Beispiel: in der Anwen
 
 Standards entwickeln sich weiter
 
--->
-
-*Viertens* müss auch eine Überprüfung stattfinden und Auswirkungen auf die Praxis haben.
-
-<!--
-Validieren! dafür benötigt: formale Schemas, Datentypen, Ontologien, Reguläre Ausdrücke
-formale Sprachen wie en wie reguläre Ausdrücke, Schemata, Datentypen, Ontologien etc. Diese Sprachen dienen der Exaktheit und ermöglichen es automatisch zu überprüfen.
-
-Standards sind Abmachungen, sie können also eingehalten oder gebrochen werden. 
-
-Das erkennen von Regelverstößen und ungenauigkeiten ist jedoch nur ein Teil
-
- Wenn Regelverstöße keine Konsequenzen nach sich
-ziehen (also zum Beispiel Fehlersuche, Rückmeldung, Ablehnung von Daten...) wird sich am Ende sowieso niemand daran halten.
-
 "Ignoriere soziale Aspekte": Kein Standard ist frei von Interessen. Ein gutes Rezept zum Scheitern ist es daher so zu tun als seien Daten eine rein technische Angelegenheit ohne soziale Implikationen und Konflikte.
 
 Verhältnis von Aufwand und Nutzen...
+-->
+
+## Datenqualität erfordert Dokumentation
+
+Zweitens müssen die Regeln denen qualitative Daten folgen sollen auch dokumentiert sein.  Insbesondere müssen implizite Annahmen und Praktiken ("wurde schon immer so gemacht") explizt gemacht werden. Implizite Regeln finden sich oft im praktischen Umgang mit Daten und versteckt in Anwendungsprogrammen zur Erfassung und Verarbeitung von Erschließungsdaten. Werden beispielsweise in einem Eingabefeld mehrere Schlagwörter durch Kommata getrennt, ergibt sich daraus vermutlich die Regel, dass einzelne Schlagwörter kein Komma beinhalten können. Die Notwendigkeit einer Dokumentation ist um so höher, wenn Daten zwischen verschiedenen Einrichtungen oder Systemen ausgetauscht werden. Dabei sollte die Dokumentation nicht nur für diejenigen zugänglich sein, die Erschließung betreiben, sondern auch für all jene die Daten nutzen oder an einer Nutzung interessiert sein könnten. 
+
+Die Anforderungen an eine gute Dokumentation für Datenregeln entsprechen in etwa den allgemeinen Anforderungen an gute technische Dokumentation [@Juhl2015]. Die Regeln zur Datenqualität sollten zudem leicht auffindbar publiziert sein und Informationen zu Herausgebern, Gültigkeit und Änderungen beinhalten, idealerweise mit Versionierung.
+
+## Datenqualität erfordert Validierung
+
+Datenstandards sind Abmachungen, sie können eingehalten oder gebrochen werden. Zur Sicherstellung von Qualität müssen Regeln nach denen Daten aufgebaut werden auch überprüft werden und das Ergebnis der Überprüfung muss Auswirkungen auf die Praxis haben.
+
+<!--
+Überprüfbarkeit müssen die Regeln 
+
+Diese Anforderung bezieht sich auf die Praktikabilität von Daten und Regeln
+
+- Wenn es umfangreicher wird: Aufbau auf etablierten Datenstrukturierungssprache (JSON, CSV...)
+
+Intersubjektivität und Skaliert besser
+
+Validieren! dafür benötigt: formale Schemas, Datentypen, Ontologien, Reguläre Ausdrücke
+formale Sprachen wie en wie reguläre Ausdrücke, Schemata, Datentypen, Ontologien etc. Diese Sprachen dienen der Exaktheit und ermöglichen es automatisch zu überprüfen.
+
+Wenn Regelverstöße keine Konsequenzen nach sich
+ziehen (also zum Beispiel Fehlersuche, Rückmeldung, Ablehnung von Daten...) wird sich am Ende sowieso niemand daran halten.
+
+Validierung ist das was Anwendungsprogramme mit den Daten machen: alles was keinen Fehler hevorruft ist erlaubt.
+
 -->
 
 <!--
@@ -232,6 +204,8 @@ Informatik eher: Performance und Sicherheit
 
 - Duplicate Detection
 - 
+
+Peter Kiraly zitieren!
 
 -->
 
