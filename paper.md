@@ -63,13 +63,17 @@ Die Einflussfaktoren auf die Datenqualität führen in den verschiedenen Bereich
 
 # Anforderungen an den qualitativen Umgang mit Erschließungsdaten
 
-Nachdem betrachtet durch welche Faktoren die Qualität von Erschließungsdaten beeinflusst wird lassen sich zur Sicherstellung der Datenqualität einige allgemeine Anforderungen an den Umgang mit Erschließungsdaten identifizieren:
+Aus der Betrachtung von Faktoren, die die Qualität von Erschließungsdaten beeinflussen, lassen sich einige allgemeine Anforderungen an den Umgang mit Erschließungsdaten identifizieren:
 
-*Erstens* muss es Regeln geben, an denen die Datenqualität gemessen werden kann. So ist beispielsweise die formale Qualität eines Datenfeldes "Schlagwörter" nicht bestimmbar ohne genauere Angabe in welcher Form dort welche Art von Schlagwörtern angegeben werden sollen. Selbst Freitext-Felder beinhalten bei genauerer Betrachtung meist Regeln zu erlaubten Zeichen und Längen. Zwar können Menschen Daten oft auch ad-hoc auf Grundlage von Erfahrungswerten einschätzen; zur Sicherstellung einer einheitlichen Datenqualität ist die subjektive Bewertung von Einzelfällen jedoch nicht geeignet. Die Bewertung durch Expert*innen kann allerdings dazu beitragen sich möglicher Anforderungen an die Datenqualität bewusst zu werden und zu konkreten Regeln zu kommen.
+## Datenqualitäts-Regeln
 
-*Zweitens* müssen die Regeln denen qualitative Daten folgen sollen auch dokumentiert sein.  Insbesondere müssen implizite Annahmen und Praktiken ("wurde schon immer so gemacht") explizit aufgeschrieben werden. Implizite Regeln finden sich oft versteckt in der Software, mit der die Daten erfasst und verarbeitet werden. Werden beispielsweise aus einem Eingabefeld mehrere Schlagwörter erstellt wenn diese durch Kommata getrennt wurden, so ergibt sich dass einzelne Schlagwörter vermutlich kein Komma beinhalten können.
+Erstens muss es Regeln geben, an denen die Datenqualität gemessen werden kann. So ist beispielsweise die formale Qualität eines Datenfeldes "Schlagwörter" nicht bestimmbar ohne genauere Angabe in welcher Form dort welche Art von Schlagwörtern angegeben werden sollen. Selbst Freitext-Felder beinhalten bei genauerer Betrachtung meist Regeln zu erlaubten Zeichen und Längen. Zwar können Menschen Daten oft auch ad-hoc auf Grundlage von Erfahrungswerten einschätzen; zur Sicherstellung einer einheitlichen Datenqualität ist die subjektive Bewertung von Einzelfällen jedoch nicht geeignet. Stattdessen können Expert*innen durch ihre Einschätzungen dazu beitragen sich möglicher Anforderungen an die Datenqualität bewusst zu werden und daraus zu konkreten Regeln zu kommen.
 
-Die Notwendigkeit einer Dokumentation ist um so höher wenn Daten zwischen verschiedenen Einrichtungen oder Systemen ausgetauscht werden. Dabei sollte die Dokumentation nicht nur für diejenigen zugänglich sein, die Erschließung betreiben, sondern auch für all jene die Daten nutzen oder an einer Nutzung interessiert sein könnten. 
+## Dokumentation
+
+Zweitens müssen die Regeln denen qualitative Daten folgen sollen auch dokumentiert sein.  Insbesondere müssen implizite Annahmen und Praktiken ("wurde schon immer so gemacht") dokumentiert werden. Implizite Regeln finden sich oft im praktischen Umgang mit Daten und versteckt in Anwendungsprogrammen zur Erfassung und Verarbeitung von Erschließungsdaten. Werden beispielsweise in einem Eingabefeld mehrere Schlagwörter durch Kommata getrennt, ergibt sich daraus vermutlich die Regel, dass einzelne Schlagwörter kein Komma beinhalten können. Die Notwendigkeit einer Dokumentation ist um so höher wenn Daten zwischen verschiedenen Einrichtungen oder Systemen ausgetauscht werden. Dabei sollte die Dokumentation nicht nur für diejenigen zugänglich sein, die Erschließung betreiben, sondern auch für all jene die Daten nutzen oder an einer Nutzung interessiert sein könnten. 
+
+Die Anforderungen an eine gute Dokumentation für Datenregeln entsprechen in etwa den allgemeinen Anforderungen an gute Dokumentation
 
 Dies setzt zum einen eine ordentliche Publikation von Standards und Richtlinien voraus. ...
 
