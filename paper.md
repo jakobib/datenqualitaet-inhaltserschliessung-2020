@@ -30,15 +30,13 @@ Unter den von @FrankeMaier2018 genannten Qualitätsdimensionen im Bereich der In
 
 Bei vorgeschriebener paralleler Verwendung mehrerer Erschließungssysteme (beispielsweise wenn jeder Datensatz sowohl mit Basisklassifikation als auch mit Regensburger Verbundklassifikation erschlossen sein muss) und vollständig vorhandenen Normdaten-Mappings zwischen diesen Systemen^[Siehe dazu die Sammlung und Werkzeuge zu Normdaten-Mappings unter <https://coli-conc.gbv.de/>.] könnte eine Konsistenzregeln darin bestehen, dass die gewählten Notationen beider Systeme zumindest indirekt durch ein Mapping verbunden sein müssen.
 
-*TODO: ggf. hier noch ein Absatz zur Dimension "Representational IQ" (Wang and Strong 1996)*
-
 # Einflussfaktoren auf die Datenqualität
 
-Die Datenqualität in der Inhaltserschließung beeinflussenden Faktoren stammen aus drei unabhängigen Bereichen, die wechselseitig in Beziehung stehen (*sollte hier noch eine Abbildung dazu hin?*). Die Bereiche beziehen sich auf unterschiedliche Aspekte von Daten in ihrer statischen Form, in ihrer dynamischen Verarbeitung und in ihrem praktischen Einsatz:
+Die Datenqualität in der Inhaltserschließung beeinflussenden Faktoren stammen aus drei unabhängigen Bereichen, die wechselseitig in Beziehung stehen. Die Bereiche beziehen sich auf unterschiedliche Aspekte von Daten in ihrer statischen Form, in ihrer dynamischen Verarbeitung und in ihrem praktischen Einsatz:
 
 1. Standards und Regeln legen fest, wie Daten idealerweise aussehen sollen. Diese präskriptiven Faktoren finden sich insbesondere in Form von Datenformaten. Für die Inhaltserschließung sind drei Gruppen von Datenformaten relevant: 
 
-    * *Normdatenformate* wie SKOS, JSKOS und das MARC 21 Format für Normdaten dienen dem Austausch von Erschließungssystemen.^[Siehe <https://format.gbv.de/application/authorityp> für eine fortlaufend erweiterte Übersicht von Normdatenformaten.] Ihr Einsatz beeinflusst, wie gut konkrete Klassifikationen, Thesauri und andere Wissensorganisationssysteme genutzt werden können.
+    * *Normdatenformate* wie SKOS, JSKOS und das MARC 21 Format für Normdaten dienen dem Austausch von Erschließungssystemen.^[Siehe <https://format.gbv.de/application/authority> für eine fortlaufend erweiterte Übersicht von Normdatenformaten.] Ihr Einsatz beeinflusst, wie gut konkrete Klassifikationen, Thesauri und andere Wissensorganisationssysteme genutzt werden können.
 
     * *Bibliographische Metadatenformate* wie Dublin Core, DataCite und das PICA-Format des K10plus enthalten oft unter anderem Felder oder Attribute zur Inhaltserschließung. Die Formate beeinflussen, welche Erschließungsarten in welchem Umfang in Daten vorgesehen sind.
 
@@ -69,7 +67,10 @@ Aus der Betrachtung von Faktoren, die die Qualität von Erschließungsdaten beei
 
 Erstens muss es Regeln geben, an denen die Datenqualität gemessen werden kann. So ist beispielsweise die formale Qualität eines Datenfeldes "Schlagwörter" nicht bestimmbar, ohne genauere Angabe, in welcher Form dort welche Art von Schlagwörtern angegeben werden sollen. Selbst Freitextfelder beinhalten bei genauerer Betrachtung meist Regeln zu erlaubten Zeichen und Längen. Zwar können Menschen Daten oft auch ad-hoc auf Grundlage von Erfahrungswerten einschätzen; zur Sicherstellung einer einheitlichen Datenqualität ist die subjektive Bewertung von Einzelfällen jedoch nicht geeignet. Stattdessen können Expert\*innen durch ihre Einschätzungen dazu beitragen, sich möglicher Anforderungen an die Datenqualität bewusst zu werden und daraus zu konkreten Regeln zu kommen.
 
-<!--
+---
+
+TODO::
+
 ... Gute Standards bauen aufeinander auf (nicht das Rad neu erfinden):
 
 Im Laufe der Zeit kann es dazu kommen, dass sich außerhalb der eigenen Anwendungsdomäne konkurrierende Standards aus anderen Bereichen durchsetzen. Beispiel: Unicode statt PICA-Zeichensatz
@@ -95,10 +96,7 @@ Hacks wird es immer geben, wenn ein Standard zu eng wird. Beispiel: in der Anwen
 
 Standards entwickeln sich weiter
 
-"Ignoriere soziale Aspekte": Kein Standard ist frei von Interessen. Ein gutes Rezept zum Scheitern ist es daher so zu tun als seien Daten eine rein technische Angelegenheit ohne soziale Implikationen und Konflikte.
-
-Verhältnis von Aufwand und Nutzen...
--->
+---
 
 ## Datenqualität erfordert Dokumentation
 
@@ -108,29 +106,36 @@ Die Anforderungen an eine gute Dokumentation für Datenregeln entsprechen in etw
 
 ## Datenqualität erfordert Validierung
 
-Datenstandards sind Abmachungen, sie können eingehalten oder gebrochen werden. Zur Sicherstellung von Qualität müssen Regeln, nach denen Daten aufgebaut werden, auch überprüft werden, und das Ergebnis der Überprüfung muss Auswirkungen auf die Praxis haben.
+Datenstandards sind Abmachungen, sie können eingehalten oder gebrochen werden. Zur Sicherstellung von Qualität müssen Regeln, nach denen Daten aufgebaut werden, auch überprüft werden. Die Überprüfung muss automatisiert als *Validierung* möglich sein. Zum einen werden Regeln damit objektivierbar und zum anderen kann ihre Einhaltung dadurch nicht nur sporadisch sondern systematisch in großem Maßstab, wiederholt und dauerhaft überprüft werden.
 
-<!--
-Überprüfbarkeit müssen die Regeln 
+Prinzipiell kann Validierung durch automatische Tests in einer beliebigen Programmiersprache umgesetzt werden. Soweit möglich sollten Reeln jedoch mit Hilfe von formalen Schemasprachen ausgedrückt werden.^[Siehe <https://format.gbv.de/schema/language> für eine Übersicht von Schemasprachen.] Schemasprachen dienen der Exaktheit von Regeln, helfen dabei dass die Validierung tatsächlich das prüft was geprüft werden sollen und ermöglichen eine Validierung unabhängig von einzelnen Anwendungsprogrammen. Ohne Schemas kommt es nämlich dazu, dass alle Daten die vom jeweils benutzen Programm nicht explizit als Fehler erkannt werden, ggf. fälschlicherweise für korrekt erachtet werden statt Daten an den dokumentierten Regeln zu messen.
 
-Diese Anforderung bezieht sich auf die Praktikabilität von Daten und Regeln
+Die Wahl der Schemasprache hängt insbesondere von der Datenstrukturierungssprache des zu überprüfenden Datenformats ab. So gibt es unter Anderem JSON Schema for JSON-Formate, XML Schema für XML-Formate und ShEx für RDF-Formate. Die meisten Schemasprachen verwenden zur Einschränkung einzelner Datenfelder Datentypen und reguläre Ausdrücke --- zumindest auf diese beiden Hilfsmittel sollte bei der Umsetzung der Validierung von Erschließungsdaten zurückgegriffen werden.
 
-- Wenn es umfangreicher wird: Aufbau auf etablierten Datenstrukturierungssprache (JSON, CSV...)
+## Datenqualität erfordert Praxisbezug
 
-Intersubjektivität und Skaliert besser
+---
 
-Validieren! dafür benötigt: formale Schemas, Datentypen, Ontologien, Reguläre Ausdrücke
-formale Sprachen wie en wie reguläre Ausdrücke, Schemata, Datentypen, Ontologien etc. Diese Sprachen dienen der Exaktheit und ermöglichen es automatisch zu überprüfen.
+, und das Ergebnis der Überprüfung muss Auswirkungen auf die Praxis haben.
 
 Wenn Regelverstöße keine Konsequenzen nach sich
 ziehen (also zum Beispiel Fehlersuche, Rückmeldung, Ablehnung von Daten...) wird sich am Ende sowieso niemand daran halten.
 
-Validierung ist das was Anwendungsprogramme mit den Daten machen: alles was keinen Fehler hevorruft ist erlaubt.
+- welche Hilfsmittel, Anwendungen, Einsatz?
+- welche Akteure?
+- welche Interessen und abhängigkeiten?
 
--->
+"Ignoriere soziale Aspekte": Kein Standard ist frei von Interessen. Ein gutes Rezept zum Scheitern ist es daher so zu tun als seien Daten eine rein technische Angelegenheit ohne soziale Implikationen und Konflikte.
 
-<!--
-# Grundlegende Strukturierungsprinzipien
+Verhältnis von Aufwand und Nutzen...
+
+Wenn die Überprüfung eines Qualitätsmaßes nicht geleistet werden kann oder ihr Verletzen keine auswirkungen hat, kann es auch in der Inhaltserschießung sinnvoll sein die Maßstäben etwas herunterzuschrauben und statt unrealistischer Vorstellungen nur dass zu verlangen was auch machbar ist.
+
+---
+
+# Welche Regeln: Grundlegende Strukturierungsprinzipien
+
+*Die Notwendigkeit/Dringlichkeit von Regeln: ok, aber wie kommen wir zu regeln auf der formalen Ebene der Daten?*
 
 Grundsätzlich können Daten auf vielfältige Art und Weise in einzelne Elemente strukturiert und miteinander in Beziehung gesetzt werden. In der Praxis gibt es allerdings einige typischen Gestaltungsmuster, die unabhängig von der konkreten Technik immer wieder verwendet werden [@Voss2013a]. Zum Verständnis von Datenformaten und Standards hilft es, insbesondere nach folgenden Festlegungen Ausschau zu halten:
 
@@ -157,56 +162,31 @@ Grundsätzlich können Daten auf vielfältige Art und Weise in einzelne Elemente
 
    Listen von erlaubte Werte. Genaugenommen handelt es sich bei ...
 
-## Interoperabilität
-
-...
-
-## Useability
-
-..?
-
 # Zusammenfassung
 
-...
+... Bewertung, praktische Ratschläge...
 
-* Bewertung, praktische Ratschläge...
-
+<!--
 Kontrollierte Vokabulare: nicht nur wegen Indexierungskonsistenz sondern weil ohne diese, Maschinen nur wenig damit Andfangen können (außer Maschine-Learning, z.B. Text-Mining, was aber eher ein Schritt zur Inhaltserschließung ist!)
-
-
-# Notizen
-
+-->
+<!--
 * Beispiel: Entwicklung von Standard für ungenaue Datumsangaben
-
-* Datenmanagementplan
-
-* Datenformate zur Sacherschließung: Übersicht!! (siehe format.gbv.de)
-
-Maße:
-
-- konsistenz (hängt vom inhalt ab, kann aber auch zu Regeln führen)
-- variabilität
-
---- implizite Vorgaben, die sich erst durch Versuch und Irrtum erschließen reichen nicht aus.
-
-Sind keine Daten besser als qualitativ schlechte Daten?
 
 Datenpraxis
 
 Obgleich alle Daten letzendlich als Folgen von Bits ausgedrückt werden können, gibt es zahlreiche Datenformate und Praktiken der Datenverarbeitung
 Nun sind Daten letzendlich folgen von Bits [@Voss2013b]
 
-*Der Artikel soll einen Überblick über maßgebliche Verfahren zur Beurteilung der Qualität von Daten zur Inhaltserschließung geben.*
+* Der Artikel soll einen Überblick über maßgebliche Verfahren zur Beurteilung der Qualität von Daten zur Inhaltserschließung geben.*
 
-*Der Schwerpunkt liegt dabei nicht auf den Inhalten sondern darauf wie diese in Daten kodiert sind und sich verlässlich verarbeiten lassen (Datenformate und Schnittstellen). Technische Anforderungen und Einflussfaktoren, die weitgehen unabhängig von den Inhalten (wie umfangreich und genau ist die Sacherschließung?)*
-
-Informatik eher: Performance und Sicherheit
-
-- Duplicate Detection
-- 
-
-Peter Kiraly zitieren!
+* Der Schwerpunkt liegt dabei nicht auf den Inhalten sondern darauf wie diese in Daten kodiert sind und sich verlässlich verarbeiten lassen (Datenformate und Schnittstellen). Technische Anforderungen und Einflussfaktoren, die weitgehen unabhängig von den Inhalten (wie umfangreich und genau ist die Sacherschließung?)*
 
 -->
+
+Formale Schemas ermöglichen die Analyse von großen Datenmengen [@Kiraly2019]
+
+"The rule set in a machine readable way could be exported in Avram specification conformant JSON format,4
+so other tools could..."
+
 
 # Literaturangaben
