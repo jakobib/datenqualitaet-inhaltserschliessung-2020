@@ -1,0 +1,407 @@
+[
+  {
+    "ISBN": "978-3-658-21994-9",
+    "edition": 4,
+    "editor": [
+      {
+        "family": "Hildebrand",
+        "given": "Knut"
+      },
+      {
+        "family": "Gebauer",
+        "given": "Marcus"
+      },
+      {
+        "family": "Hinrichs",
+        "given": "Holger"
+      },
+      {
+        "family": "Mielke",
+        "given": "Michael"
+      }
+    ],
+    "id": "Q101093354",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "keyword": "information quality,data quality",
+    "publisher": "Springer Vieweg Verlag",
+    "publisher-place": "Wiesbaden",
+    "source": "Wikidata",
+    "title": "Daten- und Informationsqualität:",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1002/pra2.263",
+    "ISSN": "2373-9231",
+    "author": [
+      {
+        "family": "Holstrom",
+        "given": "Chris"
+      }
+    ],
+    "container-title": "Proceedings of the Association for Information Science and Technology",
+    "id": "Q101202887",
+    "issue": 1,
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          22
+        ]
+      ]
+    },
+    "keyword": "autocomplete,folksonomy",
+    "language": "en",
+    "source": "Wikidata",
+    "title": "The effects of suggested tags and autocomplete features on social tagging behaviors",
+    "type": "article-journal",
+    "volume": 57
+  },
+  {
+    "DOI": "10.1515/abitech-2018-4005",
+    "ISSN": "0720-6763",
+    "author": [
+      {
+        "family": "Franke-Maier",
+        "given": "Michael"
+      }
+    ],
+    "container-title": "ABI Technik, Zeitschrift für Automation, Bau und Technik im Archiv-, Bibliotheks- und Informationswesen",
+    "id": "Q101230880",
+    "issue": 4,
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          11,
+          2
+        ]
+      ]
+    },
+    "keyword": "subject cataloguing",
+    "language": "de",
+    "number-of-pages": "5",
+    "page": "327-331",
+    "source": "Wikidata",
+    "title": "Anforderungen an die Qualität der Inhaltserschließung im Spannungsfeld von intellektuell und automatisch erzeugten Metadaten",
+    "type": "article-journal",
+    "volume": 38
+  },
+  {
+    "edition": 2,
+    "id": "Q101402994",
+    "issued": {
+      "date-parts": [
+        [
+          1994,
+          3
+        ]
+      ]
+    },
+    "number-of-pages": "39",
+    "source": "Wikidata",
+    "title": "ISO 8402: Quality management and qualtity assurance - Vocabulary",
+    "publisher": "ISO",
+    "type": "report"
+  },
+  {
+    "id": "Q101403379",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11
+        ]
+      ]
+    },
+    "number-of-pages": "51",
+    "source": "Wikidata",
+    "publisher": "ISO",
+    "title": "ISO 9000: Quality management systems — Fundamentals and vocabulary",
+    "type": "report"
+  },
+  {
+    "author": [
+      {
+        "family": "Bertram",
+        "given": "Jutta"
+      }
+    ],
+    "id": "Q101417270",
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "keyword": "document indexing",
+    "number-of-pages": "315",
+    "publisher": "Ergon-Verlag",
+    "publisher-place": "Würzburg",
+    "source": "Wikidata",
+    "title": "Einführung in die inhaltliche Erschliessung",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1007/978-3-319-07121-3",
+    "ISBN": "978-3-319-07120-6",
+    "editor": [
+      {
+        "family": "Floridi",
+        "given": "Luciano"
+      },
+      {
+        "family": "Phyllis",
+        "given": "Illari"
+      }
+    ],
+    "id": "Q101419246",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "language": "en",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham, Confoederatio Helvetica",
+    "source": "Wikidata",
+    "title": "The Philosophy of Information Quality",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1007/978-3-642-23513-9",
+    "ISBN": "978-3-642-23512-2",
+    "author": [
+      {
+        "family": "Gödert",
+        "given": "Winfried"
+      },
+      {
+        "family": "Lepsky",
+        "given": "Klaus"
+      },
+      {
+        "family": "Nagelschmidt",
+        "given": "Matthias"
+      }
+    ],
+    "id": "Q101419449",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "language": "de",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham, Confoederatio Helvetica",
+    "source": "Wikidata",
+    "title": "Informationserschließung und Automatisches Indexieren: Ein Lehr- und Arbeitsbuch",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1007/978-3-540-78246-9_82",
+    "author": [
+      {
+        "family": "Reiner",
+        "given": "Ulrike"
+      }
+    ],
+    "container-title": "Data Analysis, Machine Learning and Applications",
+    "id": "Q101437799",
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "keyword": "Dewey Decimal Classification",
+    "number-of-pages": "8",
+    "page": "697-704",
+    "source": "Wikidata",
+    "title": "Automatic Analysis of Dewey Decimal Classification Notations.",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/978-3-319-24106-7",
+    "ISBN": "978-3-319-24106-7",
+    "author": [
+      {
+        "family": "Batini",
+        "given": "Carlo"
+      },
+      {
+        "family": "Scannapieco",
+        "given": "Monica"
+      }
+    ],
+    "id": "Q101460339",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "keyword": "information quality,data quality",
+    "language": "en",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham, Confoederatio Helvetica",
+    "source": "Wikidata",
+    "title": "Data and Information Quality",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1007/978-3-662-46865-4",
+    "ISBN": "978-3-662-46864-7",
+    "author": [
+      {
+        "family": "Juhl",
+        "given": "Dietrich"
+      }
+    ],
+    "edition": 3,
+    "id": "Q101552208",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "keyword": "technical documentation",
+    "publisher": "Springer Vieweg Verlag",
+    "publisher-place": "Wiesbaden",
+    "source": "Wikidata",
+    "title": "Technische Dokumentation: praktische Anleitungen und Beispiele",
+    "type": "book"
+  },
+  {
+    "DOI": "10.1145/3322905.3322929",
+    "author": [
+      {
+        "family": "Király",
+        "given": "Péter"
+      }
+    ],
+    "id": "Q101552910",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          8
+        ]
+      ]
+    },
+    "number-of-pages": "8",
+    "page": "161–168",
+    "source": "Wikidata",
+    "title": "Validating 126 million MARC records",
+    "type": "paper-conference"
+  },
+  {
+    "id": "Q1153828",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "language": "de",
+    "source": "Wikidata",
+    "title": "DIN 820: Normungsarbeit",
+    "publisher": "ISO",
+    "type": "report"
+  },
+  {
+    "ISBN": "978-1-4909-3186-9",
+    "URL": "http://aboutdata.org/",
+    "author": [
+      {
+        "family": "Voss",
+        "given": "Jakob"
+      }
+    ],
+    "id": "Q22910779",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "keyword": "data",
+    "source": "Wikidata",
+    "title": "Describing Data Patterns",
+    "publisher": "Humboldt University",
+    "type": "thesis"
+  },
+  {
+    "DOI": "10.17487/RFC2119",
+    "URL": "https://tools.ietf.org/html/rfc2119",
+    "author": [
+      {
+        "family": "Bradner",
+        "given": "S."
+      },
+      {
+        "family": "Bradner",
+        "given": "S."
+      }
+    ],
+    "id": "Q47458862",
+    "issued": {
+      "date-parts": [
+        [
+          1997,
+          3
+        ]
+      ]
+    },
+    "language": "en",
+    "number-of-pages": "3",
+    "publisher": "Internet Engineering Task Force",
+    "publisher-place": "Fremont, USA",
+    "source": "Wikidata",
+    "title": "Key words for use in RFCs to Indicate Requirement Levels",
+    "type": "book"
+  },
+  {
+    "DOI": "10.18452/9038",
+    "ISSN": "1860-7950",
+    "URL": "https://libreas.eu/ausgabe23/02voss/",
+    "author": [
+      {
+        "family": "Voss",
+        "given": "Jakob"
+      }
+    ],
+    "container-title": "LIBREAS",
+    "id": "Q61967951",
+    "issue": 23,
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "keyword": "data",
+    "source": "Wikidata",
+    "title": "Was sind eigentlich Daten?",
+    "type": "article-journal"
+  }
+]

@@ -12,12 +12,12 @@ docs/index.html: metadata.yaml paper.md wcite.yaml wcite.json
 	pandoc -s -t json \
 		metadata.yaml paper.md wcite.yaml | \
 	   ./adjust-for-html.jq | \
-   		pandoc -f json -F $(PWCITE) -F pandoc-citeproc --section-divs --toc \
+   		pandoc -f json -F $(PWCITE) -F pandoc-citeproc --section-divs \
 		--template template.html -o $@
 
 docs/voss2020.docx: metadata.yaml paper.md wcite.yaml wcite.json
 	pandoc -s -t json \
 		metadata.yaml paper.md wcite.yaml | \
 	   ./adjust-for-html.jq | \
-   		pandoc -f json -F $(PWCITE) -F pandoc-citeproc --section-divs --toc \
+   		pandoc -f json -F $(PWCITE) -F pandoc-citeproc --section-divs \
 		--reference-doc reference.docx -o $@
