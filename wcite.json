@@ -30,14 +30,15 @@
     },
     "keyword": "information quality,data quality",
     "publisher": "Springer Vieweg Verlag",
-    "publisher-place": "Wiesbaden",
+    "publisher-place": "Wiesbaden, Германия",
     "source": "Wikidata",
     "title": "Daten- und Informationsqualität:",
     "type": "book"
   },
   {
-    "DOI": "10.1002/pra2.263",
+    "DOI": "10.1002/PRA2.263",
     "ISSN": "2373-9231",
+    "URL": "https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/pra2.263",
     "author": [
       {
         "family": "Holstrom",
@@ -64,8 +65,9 @@
     "volume": 57
   },
   {
-    "DOI": "10.1515/abitech-2018-4005",
+    "DOI": "10.1515/ABITECH-2018-4005",
     "ISSN": "0720-6763",
+    "URL": "https://www.degruyter.com/view/journals/abitech/38/4/article-p327.xml",
     "author": [
       {
         "family": "Franke-Maier",
@@ -106,9 +108,8 @@
     },
     "number-of-pages": "39",
     "source": "Wikidata",
-    "title": "ISO 8402: Quality management and qualtity assurance - Vocabulary",
-    "publisher": "ISO",
-    "type": "report"
+    "title": "Quality management and qualtity assurance - Vocabulary",
+    "type": "book"
   },
   {
     "id": "Q101403379",
@@ -122,9 +123,8 @@
     },
     "number-of-pages": "51",
     "source": "Wikidata",
-    "publisher": "ISO",
-    "title": "ISO 9000: Quality management systems — Fundamentals and vocabulary",
-    "type": "report"
+    "title": "Quality management systems — Fundamentals and vocabulary",
+    "type": "book"
   },
   {
     "author": [
@@ -144,7 +144,7 @@
     "keyword": "document indexing",
     "number-of-pages": "315",
     "publisher": "Ergon-Verlag",
-    "publisher-place": "Würzburg",
+    "publisher-place": "Würzburg, Германия",
     "source": "Wikidata",
     "title": "Einführung in die inhaltliche Erschliessung",
     "type": "book"
@@ -282,7 +282,7 @@
     },
     "keyword": "technical documentation",
     "publisher": "Springer Vieweg Verlag",
-    "publisher-place": "Wiesbaden",
+    "publisher-place": "Wiesbaden, Германия",
     "source": "Wikidata",
     "title": "Technische Dokumentation: praktische Anleitungen und Beispiele",
     "type": "book"
@@ -295,6 +295,7 @@
         "given": "Péter"
       }
     ],
+    "container-title": "Proceedings of the 3rd International Conference on Digital Access to Textual Cultural Heritage",
     "id": "Q101552910",
     "issued": {
       "date-parts": [
@@ -322,9 +323,8 @@
     },
     "language": "de",
     "source": "Wikidata",
-    "title": "DIN 820: Normungsarbeit",
-    "publisher": "ISO",
-    "type": "report"
+    "title": "Normungsarbeit",
+    "type": "book"
   },
   {
     "ISBN": "978-1-4909-3186-9",
@@ -346,7 +346,6 @@
     "keyword": "data",
     "source": "Wikidata",
     "title": "Describing Data Patterns",
-    "publisher": "Humboldt University",
     "type": "thesis"
   },
   {
